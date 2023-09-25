@@ -45,17 +45,7 @@ function myFunction(e) {
 function time(e) {
     document.getElementById("time-in").value =  e.innerHTML;
 }
-// let edit=document.querySelectorAll('.edit');
-//       Array.from(edit).forEach((element)=>{
-//         element.addEventListener('click', (e)=>{
-//       let tr= e.target.parentNode.parentNode;
-//       let title= tr.getElementsByTagName("td")[0].innerText;
-//       let about= tr.getElementsByTagName("td")[1].innerText;   // 1st humne javascript  OR pHP ko connect kesa kiya 
-//       titlee.value = title;                                     // with help of MODAL/form HANDLING
-//       aboutt.value = about;  
-//       snoEdit.value = e.target.id; 
-//       }) 
-//     })
+
 
 
 prevNextIcon.forEach(icon => { // getting prev and next icons
