@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Scss files-->
+    <link rel="stylesheet" href="./sass/main.css" />
+    <link rel="stylesheet" href="./sass/appoinment.css" />
+    <!--Css files-->
+    <link rel="stylesheet" href="./styles/calender.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
+    <link rel="stylesheet" href="./styles/time.css" />
+
+    <title>Book Your Appoinment</title>
+  </head>
+  <body>
+    <header class="header-section">
+      <div class="header-top">
+        <div class="header-contact">
+          <div class="header-mail">
+            <a href="mailto:abc@example.com">
+              <img src="./assests/icons/mail-logo.png"
+            /></a>
+            <a href="mailto:abc@example.com">abc@example.com</a>
+          </div>
+          <div class="header-call">
+            <a href="tel:+123456789">
+              <img src="./assests/icons/call-logo.png"
+            /></a>
+            <a href="tel:+123456789">+123456789</a>
+            <a href="tel:+123456789">+123456789</a>
+          </div>
+        </div>
+        <div class="header-links">
+          <h5>Follow Us</h5>
+          <div class="media-links">
+            <ul>
+              <li>
+                <a target="_blank" href="https://www.facebook.com/">
+                  <img src="./assests/icons/facebook.png" />
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.instagram.com/">
+                  <img src="./assests/icons/instagram.png" />
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.twitter.com/">
+                  <img src="./assests/icons/twitter.png" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-main">
+        <div class="header-logo">
+          <img src="./assests/icons/demo-logo.png" />
+        </div>
+        <div class="header-nav">
+          <nav class="navbar">
+            <ul>
+              <li>
+                <a class="header-menu" href="index.html">HOME</a>
+              </li>
+              <li>
+                <a class="header-menu" href="AboutUs.html">ABOUT US</a>
+              </li>
+              <li>
+                <a class="header-menu" href="blog.html">BLOG</a>
+              </li>
+              <li>
+                <a class="header-menu" href="blogpage2.html">ARTICLE</a>
+              </li>
+            </ul>
+            <div class="header-btn">
+              <button
+                onclick="location.href = 'appoinment.html'"
+                class="b-btn b-btn-primary"
+              >
+                Book Appoinment
+              </button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!--Book appoinment section-->
+
+    <section class="appoinment-section">
+      <div class="appoinment-card">
+        <div class="appoinment-left">
+          <img src="./assests/images/appoinment-img.png" alt="" />
+        </div>
+        <div class="appoinment-right">
+          <div class="appoinment-box">
+            <h4>Book An Appoinment</h4>
+            <form id="in-group" class="input-group">
+              <div class="input-group-one">
+                <input
+                  id="fname-in"
+                  placeholder="Your First Name.."
+                  type="text"
+                  class="inputs"
+                />
+                <input
+                  id="lname-in"
+                  placeholder="Your Last Name.."
+                  type="text"
+                  class="inputs"
+                />
+              </div>
+              <div class="input-group-one">
+                <input
+                  id="email-in"
+                  placeholder="Your Email.."
+                  type="text"
+                  class="inputs"
+                />
+                <input
+                  id="phone-in"
+                  placeholder="Your Phone Number"
+                  type="tel"
+                  class="inputs"
+                />
+              </div>
+          
+              <div class="input-group-two">
+                <input
+                  id="date-in"
+                  type="text"
+                  placeholder="Select Your Date"
+                  class="inputs"
+                />
+                <input
+                  id="time-in"
+                  type="text"
+                  placeholder="Select Your Time"
+                  class="inputs"
+                />
+                <div class="selectDate-btn" onclick="handleModal()">
+                  Select Date
+                </div>
+              </div>
+              <div class="input-group-des">
+                <textarea
+                  id="textarea-in"
+                  placeholder="Your Health Details"
+                  class="textarea-input"
+                ></textarea>
+              </div>
+              <div class="appoinment-btn">
+                <button
+                  type="submit"
+                  value="Submit"
+                  class="b-btn b-btn-primary"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer section-->
+    <section class="footer-section">
+      <div class="footer-container">
+        <div class="footer-card">
+          <div class="footer-column">
+            <img src="./assests/icons/demo-logo.png" alt="LOGO" />
+            <p>
+              the 1960s with the release of Letraset sheets containing Lorem
+              Ipsum passages, and more recently with desktop publishing software
+              like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h4>Company</h4>
+
+            <!-- <a href="about.html">why us?</a> -->
+            <a href="blog.html">Our Blog</a>
+            <a href="blogpage2.html">Recent Atricles</a>
+            <a href="appoinment.html">Book Appoinment</a>
+          </div>
+
+          <div class="footer-column">
+            <h4>Help</h4>
+            <a href="footer_pages/support.html">Customer Support</a>
+            <a href="footer_pages/terms.html">Terms and Conditions</a>
+            <a href="footer_pages/policy.html">Privacy Policy</a>
+          </div>
+
+          <div class="footer-column">
+            <h4>Contact Us</h4>
+            <div class="footer-call">
+              <a href="tel:+123456789"
+                ><img src="./assests/icons/call-logo.png" alt=""
+              /></a>
+              <a href="tel:+123456789">+123456789</a>
+            </div>
+            <div>
+              <ul class="f-links">
+                <li class="f-links-li">
+                  <a target="_blank" href="https://www.facebook.com/">
+                    <img
+                      class="f-links-li-img"
+                      src="./assests/icons/facebook.png"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://www.instagram.com/">
+                    <img
+                      class="f-links-li-img"
+                      src="./assests/icons/instagram.png"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://www.twitter.com/">
+                    <img
+                      class="f-links-li-img"
+                      src="./assests/icons/twitter.png"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--modal -calender section-->
+    <div class="quote-modal" id="qModal">
+      <div class="modal-card">
+        <div class="head-box">
+          <!-- <h3>Schedule your appoinment date</h3> -->
+          <span onclick="handleModal()">&#x2715;</span>
+        </div>
+
+        <div class="calender-section">
+          <div class="wrapper">
+            <header>
+              <h3 id="demo"></h3>
+              <p class="current-date"></p>
+              <div class="icons">
+                <span id="prev" class="material-symbols-rounded">&#60;</span>
+                <span id="next" class="material-symbols-rounded">&#62;</span>
+              </div>
+            </header>
+            <div class="calendar">
+              <ul class="weeks">
+                <li>Sun</li>
+                <li>Mon</li>
+                <li>Tue</li>
+                <li>Wed</li>
+                <li>Thu</li>
+                <li>Fri</li>
+                <li>Sat</li>
+              </ul>
+              <ul class="days" onclick="handleTimeModal()"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--modal -calender section-->
+    <div class="quote-timemodal" id="tModal">
+      <div class="timemodal-card">
+        <div class="head-box">
+          <!-- <h3>Schedule your appoinment date</h3> -->
+          <span onclick="handleTimeModal()">&#x2715;</span>
+        </div>
+
+        <section class="time-section">
+          <div class="booking-time">
+            <div class="booking-heading">
+              <h3>Select Your Time</h3>
+              
+            </div>
+
+            <div class="available-time">
+              <div class="time-slot" id="timeSlot" onclick="selectSlot()">
+                <input type="radio" id="slot1" name="time-slot" value="slot" />
+                <label for="timeSlot" onclick="time(this)">9:00-9:30</label>
+              </div>
+
+              <div class="time-slot" id="timeSlot">
+                <input type="radio" id="slot2" name="time-slot" value="slot" />
+                <label for="slot2" onclick="time(this)">10:00-10:30</label>
+              </div>
+              <div class="time-slot" id="timeSlot">
+                <input type="radio" id="slot3" name="time-slot" value="slot" />
+                <label for="slot3" onclick="time(this)">11:00-11:30</label>
+              </div>
+              <div class="time-slot" id="timeSlot">
+                <input type="radio" id="slot4" name="time-slot" value="slot" />
+                <label for="slot4" onclick="time(this)">12:00-12:30</label>
+              </div>
+              <div class="time-slot" id="timeSlot">
+                <input type="radio" id="slot5" name="time-slot" value="slot" />
+                <label for="slot5" onclick="time(this)">12:00-12:30</label>
+              </div>
+              <div class="time-slot" id="timeSlot">
+                <input type="radio" id="slot6" name="time-slot" value="slot" />
+                <label for="slot6" onclick="time(this)">12:00-12:30</label>
+              </div>
+              <div class="time-slot" id="timeSlot">
+                <input type="radio" id="slot7" name="time-slot" value="slot" />
+                <label for="slot7" onclick="time(this)">12:00-12:30</label>
+              </div>
+              <div class="time-slot" id="timeSlot">
+                <input type="radio" id="slot8" name="time-slot" value="slot" />
+                <label for="slot8" onclick="time(this)">12:00-12:30</label>
+              </div>
+              <div class="time-slot" id="timeSlot">
+                <input type="radio" id="slot9" name="time-slot" value="slot" />
+                <label for="slot9" onclick="time(this)">12:00-12:30</label>
+              </div>
+              <div class="time-slot" id="timeSlot">
+                <input type="radio" id="slot10" name="time-slot" value="slot" />
+                <label for="slot10" onclick="time(this)">12:00-12:30</label>
+              </div>
+              <div class="time-slot" id="timeSlot">
+                <input type="radio" id="slot11" name="time-slot" value="slot" />
+                <label for="slot11" onclick="time(this)">12:00-12:30</label>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+ 
+    <!--JS files-->
+    <script src="./js/calender.js"></script>
+
+    <!--Initialize date Modal-->
+    <script>
+      const qModal = document.getElementById("qModal");
+
+      function handleModal() {
+        qModal.classList.toggle("active");
+      }
+    </script>
+
+    <!--Initialize time Modal-->
+    <script>
+      const tModal = document.getElementById("tModal");
+
+      function handleTimeModal() {
+        tModal.classList.toggle("active");
+      }
+    </script>
+
+    <script>
+      function selectSlot() {
+        var TimeSlot = document.getElementsById("timeSlot");
+        TimeSlot.style.backgroundColor = "rgb(37 237 37)";
+
+        window.onclick = function (event) {
+          if (event.target == TimeSlot) {
+            TimeSlot.style.display = "none";
+          }
+        };
+      }
+    </script>
+  </body>
+</html>
